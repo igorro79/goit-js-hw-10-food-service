@@ -13,11 +13,7 @@ const bodyq = document.querySelector("body");
 
 // =========== создаем разметку ===========
 
-function createCardsMarkup(cards) {
-  return cards.map(cardsTpl).join();
-}
-const colorsMarkup = createCardsMarkup(cards);
-
+const colorsMarkup = cardsTpl(cards);
 container.innerHTML = colorsMarkup;
 
 // =========== проверка текущей темы ===========
