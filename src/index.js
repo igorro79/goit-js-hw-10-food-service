@@ -1,8 +1,7 @@
 "use strict";
 import cards from "/menu.json";
-// import cardsTpl from "./templates/card.hbs";
+import cardsTpl from "./templates/card.hbs";
 
-console.log(cardsTpl);
 // ========= переменные =========
 const Theme = {
   LIGHT: "light-theme",
@@ -18,7 +17,7 @@ function createCardsMarkup(cards) {
   return cards.map(cardsTpl).join();
 }
 const colorsMarkup = createCardsMarkup(cards);
-console.log(colorsMarkup);
+
 // container.innerHTML = cardsTpl(cards);
 
 // =========== проверка текущей темы ===========
