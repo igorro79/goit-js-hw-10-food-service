@@ -18,7 +18,7 @@ function createCardsMarkup(cards) {
 }
 const colorsMarkup = createCardsMarkup(cards);
 
-// container.innerHTML = cardsTpl(cards);
+container.innerHTML = colorsMarkup;
 
 // =========== проверка текущей темы ===========
 if (localStorage.getItem("theme") === Theme.DARK) {
