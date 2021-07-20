@@ -1,7 +1,7 @@
 "use strict";
 import cards from "/menu.json";
-import cardsTpl from "./templates/card.hbs";
-
+import cardsTpl from "/templates/card.hbs";
+console.log(cards[0].ingredients);
 // ========= переменные =========
 const Theme = {
   LIGHT: "light-theme",
